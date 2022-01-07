@@ -1,0 +1,13 @@
+<p>
+        <!-- <%if((locals.user && locals.user.id==comment.user.id)|| (locals.user && locals.user.id==i.user.id) ){%>
+                <a class="delete-button" href="/comment/destroy/<%=comment.id%>">-</a>
+        <%}%> -->
+        
+    <h4 style="color: red;"><%if((locals.user && locals.user.id==comment.user.id)|| (locals.user && locals.user.id==i.user.id) ){%>
+        <a class="delete-button" href="/comment/destroy/<%=comment.id%>">x</a>
+<%}%> <%=comment.content%>- <small style="color:black;"> <%=comment.user.name%></small></h4>
+     
+    
+            
+     
+</p>
